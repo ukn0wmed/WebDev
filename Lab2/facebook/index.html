@@ -1,10 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Facebook</title>
+    <link
+            rel="icon"
+            href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- To get the font-awesome CSS style sheet for the 'Eye Icon' located in the password field -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
 </head>
 <body>
+<div class="contains-top-half-and-footer-bottom-half">
+    <div class="global-container">
+        <div class="bigger-box">
+            <div class="big-box">
+                <div class="left-box">
+                    <div class="image-box">
+                        <img
+                                class="fb-logo"
+                                src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg"
+                                alt=""
+                        />
+                    </div>
+                    <h2 class="logo-caption">
+                        Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.
+                    </h2>
+                </div>
+                <div class="right-box">
+                    <div class="form-container">
+                        <form>
+                            <div class="space">
+                                <input
+                                        type="text"
+                                        class="email-box"
+                                        placeholder="Электронный адрес или номер телефона"
+                                />
+                            </div>
+                            <div style="display: flex">
+                                <div class="space">
+                                    <input
+                                            type="password"
+                                            class="pw-box"
+                                            placeholder="Пароль"
+                                            id="password_field"
+                                    />
+                                </div>
+                                <i
+                                        class="far fa-eye-slash"
+                                        id="toggleEyeIcon"
+                                        style="cursor: pointer; display: none; margin: 24px -42px"
+                                ></i>
+                            </div>
+                            <div class="space">
+                                <button type="button" class="login-button">
+                                    <b>Вход</b>
+                                </button>
+                            </div>
+                            <div class="spaceTwo adjustTwo">
+                                <a href="#" class="adjust-forgot-pw">Забыли пароль?</a>
+                            </div>
+                            <div class="line"></div>
+                            <div>
+                                <button type="button" class="create-button">
+                                    <b>Создать новый аккаунт</b>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="bottom-link-box">
+                        <a class="bottom-link" href="#"><b>Создать Страницу</b></a>
+                        знаменитости, музыкальной группы <br> или компании.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <ul>
+                <li class="list-items">Русский</li>
+                <li class="list-items">
+                    <a class="list-items" href="#">English(US)</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Türkçe</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Bahasa Indonesia</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">中文(简体)</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Қазақша</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Deutsch</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">한국어</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Shqip</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Español</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Português (Brasil)</a>
+                </li>
+                <button type="button" class="plus-button">+</button>
+            </ul>
+            <div class="line-2 reduce-margin"></div>
+            <ul>
+                <li class="list-items">
+                    <a class="list-items" href="#">Регистрация</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Вход</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Messenger</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Facebook Lite</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Видео</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Места</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Игры</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Marketplace</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Meta Pay</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Meta Store</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Meta Quest</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Imagine with Meta AI</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Instagram</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Threads</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Благотворительные акции</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Услуги</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Центр информации о выборах</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Политика конфиденциальности</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Центр конфиденциальности</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Группы</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Информация</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Создать рекламу</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Создать Страницу</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Разработчикам</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Вакансии</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Файлы cookie</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Рекламные предпочтения</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Условия использования</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Справка</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Загрузка контактов и лица, не являющиеся пользователями</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Настройки</a>
+                </li>
+                <li class="list-items">
+                    <a class="list-items" href="#">Журнал действий</a>
+                </li>
+            </ul>
 
+            <div class="fb-clone">
+                <p>Meta © 2024</p>
+            </div>
+        </div>
+    </footer>
+</div>
 </body>
 </html>
