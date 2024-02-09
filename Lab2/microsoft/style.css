@@ -17,16 +17,16 @@ body {
     padding: 10px;
 }
 
+.medium{
+    font-weight: normal;
+}
+
 .up{
     float: left;
     padding: 13px 13px 10px 13px;
     color: darkslategray;
 }
 
-.up11{
-    text-align: left;
-    padding: 13px 150px 30px 150px;
-}
 .news div h1 {
     font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 500;
