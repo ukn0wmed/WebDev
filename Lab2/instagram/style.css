@@ -1,11 +1,3 @@
-:root {
-    --main-color: #0095f6;
-    --text-color: #262626;
-    --background-color: rgb(250, 250, 250);
-    --border-color: 219, 219, 219;
-    --footer-text-color: rgb(00, 55, 107);
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -17,7 +9,7 @@
 }
 
 body{
-    background-color: var(--background-color);
+    background-color: rgb(250, 250, 250);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -44,9 +36,6 @@ body{
     top: -513px;
     left: 98px;
     opacity: 0;
-    animation-name: animation;
-    animation-duration: 25s;
-    animation-iteration-count: infinite;
 }
 
 .user{
@@ -65,7 +54,7 @@ body{
 .login-container,
 .signup-container{
     background-color: rgb(255, 255, 255);
-    border: 1px solid rgba(var(--border-color),1);
+    border: 1px solid rgba(219, 219, 219,1);
     margin-bottom: 10px;
     padding: 10px 0;
 }
@@ -93,10 +82,10 @@ body{
 }
 
 .inputs-container input{
-    background: var(--background-color);
+    background: rgb(250, 250, 250);
     width: 100%;
     padding: 9px 0 7px 8px;
-    border: 1px solid rgba(var(--border-color),1);
+    border: 1px solid rgba(219, 219, 219,1);
     border-radius: 2px;
     outline: none;
 }
@@ -118,7 +107,7 @@ body{
 }
 
 .login-button:hover{
-    background-color: var(--main-color);
+    background-color: #0095f6;
 }
 
 .or-container{
@@ -129,7 +118,7 @@ body{
 }
 
 .line{
-    background-color: rgb(var(--border-color));
+    background-color: rgb(219, 219, 219);
     height: 1px;
     position: relative;
     top: .45em;
@@ -158,7 +147,7 @@ body{
 }
 
 .password-forgot{
-    color: var(--footer-text-color);
+    color: rgb(00, 55, 107);
     text-align: center;
     font-size: 12px;
     margin-top: 15px;
@@ -167,7 +156,7 @@ body{
 
 .signup-container p,
 .get-container p{
-    color: var(--text-color);
+    color: #262626;
 }
 
 .signup-container p{
@@ -176,7 +165,7 @@ body{
 }
 
 .signup{
-    color: var(--main-color);
+    color: #0095f6;
     font-weight: 600;
 }
 
