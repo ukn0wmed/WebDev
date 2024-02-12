@@ -64,7 +64,7 @@ body {
 .news {
     margin: 50px;
     margin-top: 80px;
-    padding-left: 10px;
+    padding-left: 250px;
     padding-right: 10px;
 
     display: flex;
@@ -135,7 +135,7 @@ h3, p{
 }
 
 .up-right{
-    padding: 13px 13px 30px 13px;
+    padding: 13px 13px 13px 13px;
     color: darkslategray;
 }
 .left,
