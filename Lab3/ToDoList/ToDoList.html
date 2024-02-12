@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .input {
+            display: flex;
+            align-items: center;
+        }
+
+        .input input {
+            flex: 1;
+            border: 1px solid #ccc;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .input button {
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .input button:hover {
+            background-color: #3E8E41;
+        }
+
+        .list {
+            list-style: none;
+        }
+
+        .list li {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .list li.done {
+            color: #999;
+        }
+
+        .list li input {
+            margin-right: 10px;
+        }
+
+        .list li span {
+            flex: 1;
+        }
+
+        .list li.done span {
+            text-decoration: line-through;
+        }
+
+        .list li i {
+            margin-left: 10px;
+            color: #f44336;
+            cursor: pointer;
+        }
+
+        .list li i:hover {
+            color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+<h1>Todo List App</h1>
+<div class="container">
+    <div class="input">
+        <input type="text" id="item" placeholder="Enter a new item">
+        <button id="add">Add</button>
+    </div>
+    <ul class="list" id="list">
+        <li>
+            <input type="checkbox">
+            <span>Buy groceries</span>
+            <i class="fas fa-trash"></i>
+        </li>
+        <li>
+            <input type="checkbox">
+            <span>Clean the house</span>
+            <i class="fas fa-trash"></i>
+        </li>
+        <li>
+            <input type="checkbox">
+            <span>Do homework</span>
+            <i class="fas fa-trash"></i>
+        </li>
+    </ul>
+</div>
+<script>
+    // Get the elements from the document
+    const itemInput = document.getElementById("item");
+    const addButton = document.getElementById("add");
+    const list = document.getElementById("list");
+
+    // Add a new item to the list
+    function addItem() {
+        // Get the value of the input
+        const itemValue = itemInput.value.trim();
+
+        // Check if the input is not empty
+        if (itemValue) {
+            // Create a new list item element
+            const listItem = document.createElement("li");
+
+            // Create a checkbox element
+            const checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+
+            // Add an event listener to the checkbox
+            checkbox.addEventListener("change", function() {
+                // Toggle the done class on the list item
+                listItem.classList.toggle("done");
+            });
+
+            // Create a span element
+            const span = document.createElement("span");
+            span.textContent = itemValue;
+
+            // Create an icon element
+            const icon = document.createElement("i");
+            icon.className = "fas fa-trash";
+
+            // Add an event listener to the icon
+            icon.addEventListener("click", function() {
+                // Remove the list item from the list
+                list.removeChild(listItem);
+            });
+
+            // Append the elements to the list item
+            listItem.appendChild(checkbox);
+            listItem.appendChild(span);
+            listItem.appendChild(icon);
+
+            // Append the list item to the list
+            list.appendChild(listItem);
+
+            // Clear the input value
+            itemInput.value = "";
+        }
+    }
+
+    // Add an event listener to the add button
+    addButton.addEventListener("click", addItem);
+
+    // Add an event listener to the input
+    itemInput.addEventListener("keyup", function(event) {
+        // Check if the enter key was pressed
+        if (event.keyCode === 13) {
+            // Call the addItem function
+            addItem();
+        }
+    });
+</script>
+</body>
+</html>
