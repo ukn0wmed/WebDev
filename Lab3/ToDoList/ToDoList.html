@@ -74,14 +74,18 @@
             text-decoration: line-through;
         }
 
-        .list li i {
+        .list li button {
             margin-left: 10px;
-            color: #f44336;
+            border: none;
+            background-color: #f44336;
+            color: white;
+            padding: 5px 10px;
+            font-size: 14px;
             cursor: pointer;
         }
 
-        .list li i:hover {
-            color: #d32f2f;
+        .list li button:hover {
+            background-color: #d32f2f;
         }
     </style>
 </head>
@@ -93,22 +97,7 @@
         <button id="add">Add</button>
     </div>
     <ul class="list" id="list">
-        <li>
-            <input type="checkbox">
-            <span>Buy groceries</span>
-            <i class="fas fa-trash"></i>
-        </li>
-        <li>
-            <input type="checkbox">
-            <span>Clean the house</span>
-            <i class="fas fa-trash"></i>
-        </li>
-        <li>
-            <input type="checkbox">
-            <span>Do homework</span>
-            <i class="fas fa-trash"></i>
-        </li>
-    </ul>
+     </ul>
 </div>
 <script>
     // Get the elements from the document
@@ -140,12 +129,12 @@
             const span = document.createElement("span");
             span.textContent = itemValue;
 
-            // Create an icon element
-            const icon = document.createElement("i");
-            icon.className = "fas fa-trash";
+            // Create a button element
+            const button = document.createElement("button");
+            button.textContent = "Delete";
 
-            // Add an event listener to the icon
-            icon.addEventListener("click", function() {
+            // Add an event listener to the button
+            button.addEventListener("click", function() {
                 // Remove the list item from the list
                 list.removeChild(listItem);
             });
@@ -153,7 +142,7 @@
             // Append the elements to the list item
             listItem.appendChild(checkbox);
             listItem.appendChild(span);
-            listItem.appendChild(icon);
+            listItem.appendChild(button);
 
             // Append the list item to the list
             list.appendChild(listItem);
