@@ -9,6 +9,7 @@
         }
 
         h1 {
+            padding: 25px;
             text-align: center;
             font-family: Arial, sans-serif;
             color: #333;
@@ -100,18 +101,22 @@
      </ul>
 </div>
 <script>
-    // Get the elements from the document
     const itemInput = document.getElementById("item");
     const addButton = document.getElementById("add");
     const list = document.getElementById("list");
 
-    // Add a new item to the list
     function addItem() {
+
         // Get the value of the input
         const itemValue = itemInput.value.trim();
 
         // Check if the input is not empty
         if (itemValue) {
+
+            if (itemValue === "new"){
+                alert("error");
+                return 0;
+            }
             // Create a new list item element
             const listItem = document.createElement("li");
 
