@@ -1,10 +1,8 @@
-<a [routerLink]="['/Empty']">
-  <h1 class="ame">Shop.kz</h1>
-</a>
+<app-top-bar></app-top-bar>
 
-<a routerLink="/cart" class="button fancy-button">
-  <i class="material-icons">shopping_cart</i>Checkout
-</a>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.

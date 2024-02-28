@@ -40,7 +40,7 @@ export const products = [
     description: 'Thin. Light. Powerful.',
     img : "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h65/h0f/33125684084766/apple-macbook-air-2020-13-3-mgn63-seryj-100797845-1-Container.jpg",
     url: "https://kaspi.kz/shop/p/apple-macbook-air-13-mgn63-seryi-100797845/",
-    img2 : "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h06/hbb/52177862557726/apple-macbook-air-2020-13-3-mgn63-seryj-100797845-2-Container.jpg",
+    img2 : "https://resources.cdn-kaspi.kz/img/m/p/h9b/hed/64082975653918.jpg",
     img3 :"https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h2f/h97/50489392824350/apple-macbook-air-13-mgn63-seryj-100797845-4.jpg",
     rating: 3
   },

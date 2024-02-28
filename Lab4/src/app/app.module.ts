@@ -12,6 +12,7 @@ import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
 import { EmptyComponentComponent } from './empty-component/empty-component.component';
+import { CategoryListComponent } from './category-list/category-list.component';
 
 @NgModule({
   imports: [
@@ -34,7 +35,8 @@ import { EmptyComponentComponent } from './empty-component/empty-component.compo
     ProductDetailsComponent,
     CartComponent,
     ShippingComponent,
-    EmptyComponentComponent
+    EmptyComponentComponent,
+    CategoryListComponent
   ],
   bootstrap: [
     AppComponent
