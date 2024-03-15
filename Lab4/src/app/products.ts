@@ -26,7 +26,7 @@ export const products = [
     id: 2,
     name: 'Airpods Pro 2',
     price: 399,
-    description: 'New Era Of Sound. ',
+    description: 'type c edition',
     img : "https://resources.cdn-kaspi.kz/img/m/p/ha3/h07/84108189630494.jpg?format=gallery-medium",
     url: "https://kaspi.kz/shop/p/apple-airpods-pro-2nd-generation-with-wireless-magsafe-charging-case-belyi-113677582/?c=750000000",
     img2 : "https://resources.cdn-kaspi.kz/img/m/p/h03/h0e/84108189696030.jpg?format=gallery-medium",

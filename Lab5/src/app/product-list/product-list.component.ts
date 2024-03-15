@@ -19,7 +19,7 @@ export class ProductListComponent {
   }
 
   onNotify() {
-    window.alert('You will be notified when the product goes on sale');
+    window.alert('You will be notified when the product is available (actually not its just a message)');
   }
 
   setFilteredItem(event: Event) {
